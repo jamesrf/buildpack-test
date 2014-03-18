@@ -1,3 +1,4 @@
-echo "RELEASE==========="
+#!/bin/sh
+echo "DETECT=============="
 echo $1
 exit 0
