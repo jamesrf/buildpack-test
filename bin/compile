@@ -4,4 +4,5 @@ echo "=== COMPILE ==="
 echo $1
 echo $2
 echo $3
+env
 echo "Done"
