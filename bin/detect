@@ -1,4 +1,9 @@
 #!/bin/sh
 echo "DETECT=============="
 echo $1
+if [ -n "$BUILDPACK_DETECT_FAIL" ]
+then
+  echo "detect failed because BUILDPACK_DETECT_FAIL was set"
+  exit 1
+fi
 exit 0
