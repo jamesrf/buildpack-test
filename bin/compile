@@ -10,4 +10,9 @@ then
   echo "detect failed because BUILDPACK_COMPILE_FAIL was set"
   exit 1
 fi
+if [ -n "$BUILDPACK_SCAN_FILES" ]
+then
+  echo "scanning files because BUILDPACK_SCAN_FILES was set"
+  du -a -h .
+fi
 echo "Done"
