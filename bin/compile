@@ -14,5 +14,6 @@ if [ -n "$BUILDPACK_SCAN_FILES" ]
 then
   echo "scanning files because BUILDPACK_SCAN_FILES was set"
   du -a -h .
+  find . -type f -print0 | xargs -0 md5sum
 fi
 echo "Done"
